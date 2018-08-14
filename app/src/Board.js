@@ -1,24 +1,24 @@
 import React, { Component } from "react";
-import Button from "@material-ui/core/Button";
+import Square from "./Square";
 
 class Board extends Component {
   render() {
     return (
       <div>
         <div>
-          <Button variant="outlined" />
-          <Button variant="outlined" />
-          <Button variant="outlined" />
+          <Square winningBox={true} character="x" />
+          <Square winningBox={false} character="o" />
+          <Square winningBox={false} character="x" />
         </div>
         <div>
-          <Button variant="outlined" />
-          <Button variant="outlined" />
-          <Button variant="outlined" />
+          <Square winningBox={false} character="x" />
+          <Square winningBox={true} character="x" />
+          <Square winningBox={false} character="o" />
         </div>
         <div>
-          <Button variant="outlined" />
-          <Button variant="outlined" />
-          <Button variant="outlined" />
+          <Square winningBox={false} character="o" />
+          <Square winningBox={false} character="o" />
+          <Square winningBox={true} character="x" />
         </div>
       </div>
     );
